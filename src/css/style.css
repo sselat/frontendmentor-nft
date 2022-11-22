@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 18px;
+    background-color: #0d192b;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    height: 540px;
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #14253d;
+    font-size: .6em;
+    border-radius: 15px;
+}
+
+.card {
+    width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px auto;
+    gap: 15px;
+    color: white;
+    text-align: left;
+    transition: .5s;
+}
+.card h1:hover{
+    cursor: pointer;
+    color: cyan;
+    transition: .3s ease-in-out;
+}
+.card>p {
+    font-weight: 300;
+    font-size: 1rem;
+    color: #8bacda;
+    margin-bottom: 20px;
+}
+
+#cardImage {
+    width: 100%;
+    height: 275px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+.cardImage {
+    position: relative;
+}
+.cardImage:hover::before {
+    content: url('../img/icon-view.svg');
+    background-color: rgba(0, 255, 255, 0.397);
+    border-radius: 10px;
+    width: 100%;
+    height: 275px;
+    position: absolute;
+    text-align: center;
+    line-height: 300px;
+}
+.numberInfos {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #2f415b;
+}
+
+.numberInfos img {
+    height: 20px;
+}
+
+.numberInfos p,
+.numberInfos span {
+    display: flex;
+    font-size: 1rem;
+    gap: 5px;
+}
+
+.numberInfos p {
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.numberInfos span {
+    font-weight: 300;
+    color: #8bacda;
+}
+
+.credits {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #8bacda;
+    font-size: .9rem;
+}
+
+.credits p {
+    margin-left: 15px;
+}
+
+.credits a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
+    transition: .3s;
+}
+.credits a:hover {
+    color: cyan;
+}
+#avatarImg {
+    height: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    color: white;
+}
+
+.attribution a {
+    color: cornflowerblue;
+}
