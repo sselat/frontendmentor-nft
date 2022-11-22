@@ -38,13 +38,16 @@ body {
     gap: 15px;
     color: white;
     text-align: left;
-    transition: .3s;
+    transition: .3s ease-in-out;
     position: relative;
+}
+
+.card h1 {
+    transition: .3s ease-in-out;
 }
 .card h1:hover{
     cursor: pointer;
     color: cyan;
-    transition: .3s ease-in-out;
 }
 .card>p {
     font-weight: 300;
@@ -62,7 +65,8 @@ body {
 .cardImage {
     position: relative;
 }
-.cardImage:hover::before {
+
+.cardImage::before {
     content: url('../img/icon-view.svg');
     background-color: rgba(0, 255, 255, 0.397);
     border-radius: 10px;
@@ -71,6 +75,11 @@ body {
     position: absolute;
     text-align: center;
     line-height: 300px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.cardImage:hover::before {
+    opacity: 1;
 }
 .numberInfos {
     width: 100%;
