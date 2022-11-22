@@ -38,7 +38,8 @@ body {
     gap: 15px;
     color: white;
     text-align: left;
-    transition: .5s;
+    transition: .3s;
+    position: relative;
 }
 .card h1:hover{
     cursor: pointer;
